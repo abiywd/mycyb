@@ -64,4 +64,4 @@ repository, the first thing you should do is run the command `git pull` to sync 
 
 ![image-9.png](./resources/image-9.png)
 
-That's it! You're done! Now, regardless of internet connectivity, you should have access to the latest copy of our repository on your machine. If you have any questions, please reach out to James or one of the TAs for assistance. 
+That's it! You're done! Now, regardless of internet connectivity, you should have access to the latest copy of our repository on your machine. If you have any questions, please reach out to Victor or me (your TA) for assistance. 
