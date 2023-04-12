@@ -51,7 +51,7 @@ to house a GitHub or GitLab repository.
 # 4. Clone the GitLab repository to your local machine
 
 Now that we have a folder to hold the repository and we've initialized it to interface with GitLab/GitHub, it's time to clone the repository! To do so, make sure you're in the directory `~/Documents/class-repo` and run the command 
-`git clone git@unchar.bootcampcontent.com:The-Coding-Bootcamp/UNCC-VIRT-CYBER-PT-06-2022-U-LOLC.git`. This should clone the GitLab repository to your local machine in the folder you created: 
+`git clone git@unchar.bootcampcontent.com:The-Coding-Bootcamp/VU-VIRT-CYBER-PT-04-2023-U-LOLC.git`. This should clone the GitLab repository to your local machine in the folder you created: 
 
 ![image-8.png](./resources/image-8.png)
 
@@ -64,4 +64,4 @@ repository, the first thing you should do is run the command `git pull` to sync 
 
 ![image-9.png](./resources/image-9.png)
 
-That's it! You're done! Now, regardless of internet connectivity, you should have access to the latest copy of our repository on your machine. If you have any questions, please reach out to James or one of the TAs for assistance. 
+That's it! You're done! Now, regardless of internet connectivity, you should have access to the latest copy of our repository on your machine. If you have any questions, please reach out to Victor or me (your TA) for assistance. 
