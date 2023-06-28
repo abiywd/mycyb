@@ -17,4 +17,8 @@ In this activity, you will continue to play the role of a security analyst worki
 3. Use GPG to determine which of the messages are not authentic and thus not from Captain Strickland.
 
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

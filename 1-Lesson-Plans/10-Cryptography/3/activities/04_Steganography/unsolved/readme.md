@@ -23,5 +23,9 @@ You will continue your role as a security analyst working for the Hill Valley Po
 1. If the image contains a secret message, find out what it says.
 
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main
 

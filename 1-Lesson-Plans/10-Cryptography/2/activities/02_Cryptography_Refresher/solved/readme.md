@@ -32,4 +32,8 @@ The goal of this exercise was to review how to use OpenSSL and illustrate the ch
     - Emails are typically not encrypted.
     - Slack administrators can have access to view private messages between parties.
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

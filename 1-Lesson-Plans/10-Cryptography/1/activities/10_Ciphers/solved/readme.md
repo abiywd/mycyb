@@ -43,4 +43,8 @@ First, we examine the key : `{123456} = {341256}`.
   - **You can never catch the Alphabet Bandit, My next Target is Calvins House**.
 
 ----
+<<<<<<< HEAD
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

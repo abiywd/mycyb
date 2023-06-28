@@ -17,5 +17,9 @@ You will continue the role of a security analyst working for the Hill Valley Pol
 2. Use the transposition cipher key contained within the note to decrypt the cipher text.
 
 ---
+<<<<<<< HEAD
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main
 

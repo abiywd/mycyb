@@ -39,4 +39,8 @@ sub   rsa3072 2020-05-27 [E] [expires: 2022-05-27]
 5. Once you receive the clearsigned message from your partner, use GPG to verify the message is authentic. 
 
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

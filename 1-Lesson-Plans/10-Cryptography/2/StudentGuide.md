@@ -828,9 +828,13 @@ IIn the next demonstration, we will illustrate how to apply a detached digital s
     
     - Run the following command to create the file containing the message:
     
+<<<<<<< HEAD
       `echo "Transfer \$500 to the account I provided to you" > Tims_message.txt`
 
       - The `\` is used to prevent the system from treating the `$` as a variable
+=======
+      `echo "Transfer $500 to the account I provided to you" > Tims_message.txt`
+>>>>>>> main
   
 - **Step 3: Signing the Message**
 
@@ -899,7 +903,11 @@ We will now show how digital signatures with GPG can be used to not only validat
    
   - We will run the following command to modify the amount of money specified in the message:
                                                     
+<<<<<<< HEAD
     `echo "Transfer \$34,547 to the account I provided to you" > Tims_message.txt`
+=======
+    `echo "Transfer $34,547 to the account I provided to you" > Tims_message.txt`
+>>>>>>> main
   
 - **Step 2: Validating the Signature Again**
    
@@ -945,5 +953,9 @@ Summary:
 
 -------
 
+<<<<<<< HEAD
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main
 

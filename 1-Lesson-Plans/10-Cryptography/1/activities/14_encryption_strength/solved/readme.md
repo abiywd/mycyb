@@ -44,4 +44,8 @@ We will use these same math principles to evaluate the vendor's security:
 We would recommend selecting Marvin's Secure Email as the most cost-efficient vendor, as they're able to protect emails from being decrypted for over one hundred years.
 
 ---
+<<<<<<< HEAD
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

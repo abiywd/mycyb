@@ -17,4 +17,8 @@ You will continue the role of a security analyst working for the Hill Valley Pol
 2. Document the bandit's next target to provide to the police department.  
 
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

@@ -21,4 +21,8 @@ You will continue your role as a security analyst working for the Hill Valley Po
 2. With the plaintext password, open the encrypted file with the command `unzip secret.zip` and confirm whether it contains the evidence needed to lock up the Alphabet Bandit. 
 ---
 
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

@@ -120,4 +120,8 @@ Next week, we will move on to network security. We'll cover the ways a network c
 ---
 
 
+<<<<<<< HEAD
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.    
+=======
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.    
+>>>>>>> main

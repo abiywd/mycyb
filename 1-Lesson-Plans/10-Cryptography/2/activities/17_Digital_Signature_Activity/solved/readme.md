@@ -34,4 +34,8 @@ The goal of this exercise is to illustrate how digital signatures can be used to
     should be the first file given on the command line.
   ```
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

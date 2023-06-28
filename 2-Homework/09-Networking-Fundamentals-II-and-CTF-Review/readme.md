@@ -55,11 +55,19 @@ Submit your results and findings in a document.
 
 Your mission:
 
+<<<<<<< HEAD
 - Determine and document the mail servers for starwars.com using `nslookup`.
 
 - Explain why the Resistance isn't receiving any emails.
 
 - Document your suggested DNS corrections.
+=======
+- Determine and document the mail servers for starwars.com using NSLOOKUP.
+
+- Explain why the Resistance isn't receiving any emails.
+
+- Document what a corrected DNS record should be.
+>>>>>>> main
 
 ### Mission 2
 
@@ -73,11 +81,19 @@ Your mission:
 
 Your mission:
 
+<<<<<<< HEAD
   - Determine and document the `SPF` for `theforce.net` using `nslookup`.
 
   - Explain why the Force's emails are going to spam.
 
   - Doucument your suggested DNS Corrections.
+=======
+  - Determine and document the `SPF` for `theforce.net` using NSLOOKUP.
+
+  - Explain why the Force's emails are going to spam.
+
+  - Document what a corrected DNS record should be.
+>>>>>>> main
   
 ### Mission 3
 
@@ -91,7 +107,11 @@ Your mission:
   
   - Explain why the sub page of `resistance.theforce.net` isn't redirecting to `theforce.net`.
   
+<<<<<<< HEAD
   - Document your suggested DNS corrections.
+=======
+  - Document what a corrected DNS record should be.
+>>>>>>> main
   
   
 ### Mission 4
@@ -166,8 +186,11 @@ Your Mission:
   
   - Follow the steps from the `TXT` record.
     - **Note**: A backup option is provided in the TXT record (as a website) in case the main telnet site is unavailable
+<<<<<<< HEAD
 
     - **Hint**: Telnet might require switching to the IPv6 version of the site - Use man to research how to do this
+=======
+>>>>>>> main
   
   - Take a screen shot of the results.
     
@@ -177,6 +200,22 @@ Your Mission:
 
 - Congratulations, you have completed your mission and saved the Galaxy!
 
+<<<<<<< HEAD
 ---
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.        
+=======
+### Plagiarism Disclaimer
+
+It is your responsibility to include a note in the READ ME section of your repo specifying code source and its location within your repo. This applies if you have worked with a peer on an assignment, used code which you did not author or create sourced from a forum such as Stack Overflow, or you received code outside curriculum content from support staff such as an Instructor, TA, Tutor, or Learning Assistant. This will provide visibility to grading staff of your circumstances in order to avoid flagging your work as plagiarized.
+
+If you are struggling with a challenge or any aspect of the curriculum, please remember there are student support services available for you:
+
+* Ask the class Slack channel/ peer support
+* AskBCS Learning Assistants 
+* Office hours facilitated by your TA(s)
+* Tutor sessions (sign up via this link)
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.        
+>>>>>>> main
   

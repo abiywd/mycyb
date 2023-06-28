@@ -22,4 +22,8 @@ You will play the role of a security analyst working for the Hill Valley Police 
 5. Receive and decrypt your partner's encrypted code name.
 
 ---
+<<<<<<< HEAD
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

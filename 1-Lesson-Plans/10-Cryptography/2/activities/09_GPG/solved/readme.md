@@ -68,4 +68,8 @@ This solution is an example of how to encrypt and decrypt with GPG.
         
 - Preview the decrypted message and confirm with your partner this is the message they sent.        
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

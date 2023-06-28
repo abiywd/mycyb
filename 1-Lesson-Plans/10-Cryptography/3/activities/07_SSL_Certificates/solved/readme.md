@@ -57,4 +57,8 @@ This activity showed how SSL certificates can assist with the authentication of 
    
       I recommend we provide a warning message bulletin to all of our staff to be aware of all suspicious emails and websites, and to verify if certificates are legitimate on any website being accessed. Also, don't forget to digitally sign your message."
   ---
+<<<<<<< HEAD
    © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+   © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

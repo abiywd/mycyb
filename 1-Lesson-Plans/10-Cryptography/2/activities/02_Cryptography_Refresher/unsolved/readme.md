@@ -23,6 +23,10 @@ In this upcoming activity you will use your Key and IV that you had created in t
     - What method did you use to transfer the key and IV?
     - Is this a secure method for transmitting the key and IV? Why or why not?
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main
 
 

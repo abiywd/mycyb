@@ -33,4 +33,8 @@ The goal of this activity was to demonstrate how steganography is used as an app
   Captain Strickland's house - Next
   ```
 ---
+<<<<<<< HEAD
  © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+ © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

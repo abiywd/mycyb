@@ -27,4 +27,8 @@ Provide a summary to the police captain that includes the following:
  2.  Marvin's Secure Email offers 96-bit encryption for $40,000 per month.
  3.  Milton's Steel Emails offers 103-bit encryption for $100,000 per month.
 ---
+<<<<<<< HEAD
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main

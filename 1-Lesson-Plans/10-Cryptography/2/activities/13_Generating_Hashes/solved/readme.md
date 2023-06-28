@@ -80,4 +80,8 @@ The goal of this exercise was to use hashes to validate the integrity of data.  
   - In the `1110` file, the word  `significant` was changed to `no`.
 
   ---
+<<<<<<< HEAD
    © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+=======
+   © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+>>>>>>> main
