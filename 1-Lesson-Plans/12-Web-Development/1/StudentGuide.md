@@ -728,7 +728,11 @@ First, we'll need to pin the Cookie-Editor extension.
 
 - ![Cookie Editor Extension](Images/cookie-editor_extension.png)
 
+<<<<<<< Updated upstream
   - :warning: **Heads Up**: If the Cookie-Editor extension **does not** show in the browser bar shortly after launching Chrome, you'll need to install the extension by going to the following URL in Chrome: https://tinyurl.com/r48fosk and clicking **Add to Chrome**.
+=======
+  - :warning: **Heads Up**: If the Cookie-Editor extension **does not** show in the browser bar shortly after launching Chrome, you'll need to install the extension by going to the following [URL](https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm?hl=en) in Chrome and clicking **Add to Chrome**.
+>>>>>>> Stashed changes
 
 - Note the cookie icon to the right of the URL bar.
 
@@ -808,4 +812,8 @@ The goal of this activity was to demonstrate how a cookie ties to a session and 
 
 ---
 
+<<<<<<< Updated upstream
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.  
+>>>>>>> Stashed changes

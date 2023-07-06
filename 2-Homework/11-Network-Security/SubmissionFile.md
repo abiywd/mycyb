@@ -57,7 +57,11 @@ Snort Rule #1
 alert tcp $EXTERNAL_NET any -> $HOME_NET 5800:5820 (msg:"ET SCAN Potential VNC Scan 5800-5820"; flags:S,12; threshold: type both, track by_src, count 5, seconds 60; reference:url,doc.emergingthreats.net/2002910; classtype:attempted-recon; sid:2002910; rev:5; metadata:created_at 2010_07_30, updated_at 2010_07_30;)
 ```
 
+<<<<<<< Updated upstream
 1. Break down the Sort Rule header and explain what is happening.
+=======
+1. Break down the Snort Rule header and explain what is happening.
+>>>>>>> Stashed changes
 
    Answer:
 
@@ -75,11 +79,19 @@ Snort Rule #2
 alert tcp $EXTERNAL_NET $HTTP_PORTS -> $HOME_NET any (msg:"ET POLICY PE EXE or DLL Windows file download HTTP"; flow:established,to_client; flowbits:isnotset,ET.http.binary; flowbits:isnotset,ET.INFO.WindowsUpdate; file_data; content:"MZ"; within:2; byte_jump:4,58,relative,little; content:"PE|00 00|"; distance:-64; within:4; flowbits:set,ET.http.binary; metadata: former_category POLICY; reference:url,doc.emergingthreats.net/bin/view/Main/2018959; classtype:policy-violation; sid:2018959; rev:4; metadata:created_at 2014_08_19, updated_at 2017_02_01;)
 ```
 
+<<<<<<< Updated upstream
 1. Break down the Sort Rule header and explain what is happening.
 
    Answer:
 
 2. What layer of the Defense in Depth model does this alert violate?
+=======
+1. Break down the Snort Rule header and explain what is happening.
+
+   Answer:
+
+2. What layer of the Cyber Kill Chain does this alert violate?
+>>>>>>> Stashed changes
 
    Answer:
 
@@ -220,7 +232,10 @@ Next, lists all currently configured firewall rules. This will give you a good i
     $ <ADD COMMAND HERE>
     ```
 
+<<<<<<< Updated upstream
 - What is the status of `http`, `https`, `smtp` and `pop3`?
+=======
+>>>>>>> Stashed changes
 
 #### Add your adversaries to the Drop Zone.
 
@@ -451,4 +466,8 @@ Answer the following:
 
 ---
 
+<<<<<<< Updated upstream
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> Stashed changes

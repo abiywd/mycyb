@@ -69,4 +69,8 @@ Finally, write a `curl` command using the same `--cookie ryancookies.txt` option
 
 
 ---
+<<<<<<< Updated upstream
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.  
+>>>>>>> Stashed changes

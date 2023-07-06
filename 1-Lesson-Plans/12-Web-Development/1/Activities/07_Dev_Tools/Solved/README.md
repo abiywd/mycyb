@@ -36,4 +36,8 @@ Scroll up to the **Response Headers**.
             - While we didn't cover this in the demo, it is a notable response header that tells the browser: *if you detect a cross-site script being loaded, stop loading the page*. It's essentially another level of protection, in case the page has been compromised.
 
 ---
+<<<<<<< Updated upstream
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> Stashed changes

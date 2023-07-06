@@ -10,11 +10,17 @@ For this activity, you will continue in your role as a web app security engineer
 
 Before you get started with this activity, you'll need to make sure you have Google Chrome and a few other activity files installed. If your instructor has not walked you through running the setup script, please do the following 
 
+<<<<<<< Updated upstream
 ⚠️**Note**: Typically, you should avoid clicking on any link that utilizes a URL shortener and, in this case, blindly runs a script with admin access.  These types of links hide their true destination and can be used as a cloaking device by malicious actors to conceal dangerous links.  This lab is utilizing this link and script for simplicity when performing the activities.
 
 - Run the following command in your VM and enter sysadmin's password when prompted: `wget tinyurl.com/14-1--setup-script && sudo chmod +x 14-1--setup-script && sudo ./14-1--setup-script`
 
     - After it's done running, feel free to delete the `14-1--setup-script` file.
+=======
+- Run the following command in your VM and enter sysadmin's password when prompted: `wget https://gist.githubusercontent.com/eddimus/231c53698940dd4962835d55a602946f/raw/9368686da1731ec7ee380d94fd578762265c4035/14-1_setup.sh && sudo chmod +x 14-1_setup.sh && sudo ./14-1_setup.sh`
+
+    - After it's done running, feel free to delete the `14-1_setup.sh` file.
+>>>>>>> Stashed changes
 
 ### Instructions
 
@@ -41,4 +47,8 @@ Before you get started with this activity, you'll need to make sure you have Goo
         - Are there any notable security response headers that we've discussed? If so, what do they mean? 
 
 ---
+<<<<<<< Updated upstream
 © 2021 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved. 
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved. 
+>>>>>>> Stashed changes

@@ -58,6 +58,10 @@ The goal of this activity was to get familiar with the command-line tool `curl`.
 
 
 ---
+<<<<<<< Updated upstream
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> Stashed changes
 
 
