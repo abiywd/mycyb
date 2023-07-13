@@ -162,8 +162,4 @@ HTTP response headers let the client and the server pass additional information 
 - **X-XSS-Protection**: The HTTP X-XSS-Protection response header is a feature of Internet Explorer, Chrome and Safari that stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.
 
 ---
-<<<<<<< Updated upstream
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-=======
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
->>>>>>> Stashed changes
