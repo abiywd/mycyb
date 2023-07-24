@@ -8,22 +8,38 @@ In this activity, you will be playing the role of an Azure cloud security engine
 
 - You are tasked with creating a resource group and a virtual network for the Red Team.
 
+<<<<<<< HEAD
 - **Note:**  You will be using the region that you determined in the class walkthrough.  Use this same region across all of your resources.
+=======
+- **Note:** You will be using the region that you determined in the class walkthrough. Use this same region across all of your resources.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ### Instructions
 
 1. Make sure that you are using your personal Azure account. 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - Navigate to portal.azure.com. If you are not signed in with your personal account, do so now. 
 
 2. Azure requires you to create a resource group before you can set up anything else. 
 
     - Create a resource group that will contain everything the Red Team needs in the cloud.
     
+<<<<<<< HEAD
 		- Note: Choose the region you determined in the class walkthrough.  Every resource you create going forward must be created in the exact same region.		
 
 3. Before you can deploy servers and services, you must have a network where they can be accessed. 
 
     - To create a new VNet, search the Azure portal for "virtual network" and launch the Virtual networks page.
+=======
+		- Note: Choose the region you determined in the class walkthrough. Every resource you create going forward must be created in the exact same region.		
+
+3. Before you can deploy servers and services, you must have a network where they can be accessed. 
+
+    - To create a new VNet, search the Azure portal for "virtual network" and launch the "Virtual networks" page.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 4. Use the **+ Add** button to create a new network. Use your networking knowledge to fill in the correct fields.
 
@@ -37,7 +53,11 @@ In this activity, you will be playing the role of an Azure cloud security engine
 
     - Subscription type.  
     
+<<<<<<< HEAD
     - The resource group you created in step two.
+=======
+    - The resource group you created in Step 2.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     
     - The same location you chose for your resource group. 
     
@@ -45,8 +65,18 @@ In this activity, you will be playing the role of an Azure cloud security engine
 
     - Use the default settings for Security.
 
+<<<<<<< HEAD
       - In order to avoid recurring charges, do **not** enable DDoS Protection Standard.
 
     - No tags are needed.
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+      - In order to avoid recurring charges, do **not** select any additional check boxes.
+
+    - No tags are needed.
+
+---
+
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

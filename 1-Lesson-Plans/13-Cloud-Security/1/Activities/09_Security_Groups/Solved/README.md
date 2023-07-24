@@ -4,7 +4,11 @@ In this activity, you set up a firewall in front of your VNet to block all traff
 
 ---
 
+<<<<<<< HEAD
 To create a network security group:
+=======
+To create an NSG:
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - On your Azure portal home screen, search "net" and choose **Network security groups**. 
 
@@ -32,7 +36,11 @@ Configure the inbound rule as follows:
 
 - Destination: Select **Any** to block any and all traffic associated with this security group.
 
+<<<<<<< HEAD
 - Service: Select **Custom**
+=======
+- Service: Select **Custom**.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Destination port ranges: Usually, you would specify a specific port or a range of ports for the destination. In this case, you can use the wildcard (*) to block all destination ports. You can also block all ports using a range like `0-65535`.
 
@@ -51,4 +59,9 @@ Configure the inbound rule as follows:
 You should now have a VNet protected by a network security group that blocks all traffic.
 
 ---
+<<<<<<< HEAD
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

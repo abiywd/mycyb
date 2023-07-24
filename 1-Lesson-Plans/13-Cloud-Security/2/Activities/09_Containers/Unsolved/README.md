@@ -1,6 +1,10 @@
 ## Activity File: Containers
 
+<<<<<<< HEAD
 - In the previous activities you created a secure network for XCorp's Red Team. You launched a virtual machine to be a jump box on that network, with a secure SSH connection. 
+=======
+- In the previous activities you created a secure network for XCorp's Red Team. You launched a VM to be a jump box on that network, with a secure SSH connection. 
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - In this activity, you will set up this machine to run containers and prepare it to configure other machines.
 
@@ -11,9 +15,17 @@
 1. Install `docker.io` on your jump box.
 
 2. Verify that the Docker process is running. 
+<<<<<<< HEAD
    - **Note:** If the Docker service is not running, start it with `sudo systemctl start docker`. 
 
 3. Once Docker is installed, pull the container `cyberxsecurity/ansible`.
+=======
+
+   - **Note:** If the Docker service is not running, start it with `sudo systemctl start docker`. 
+
+3. Once Docker is installed, pull the container `cyberxsecurity/ansible`.
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - You will need to escalate your privileges to run the correct command.
 
     - If you get the error `failed to resize tty, using default size`, ignore it. 
@@ -25,6 +37,10 @@
     - Get the private IP address of your jump box from the VM resources page inside the Azure portal.
 
     - Go to your security group settings and create an inbound rule.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - Create a rule allowing SSH connections from your jump box's internal IP address.
   
 The rule should look similar to the following: 
@@ -47,7 +63,15 @@ The rule should look similar to the following:
 
 - Name: Name this rule anything you like, but it should describe the rule. For example: `SSH from Jump Box`.
 
+<<<<<<< HEAD
 - Description: Write a short description similar to: "Allow SSH from the jump box IP."
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved. 
+=======
+- Description: Write a short description similar to "Allow SSH from the jump box IP."
+
+---
+
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved. 
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

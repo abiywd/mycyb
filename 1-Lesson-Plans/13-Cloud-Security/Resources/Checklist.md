@@ -142,5 +142,9 @@ At the end of Day 3, you should have the following critical tasks completed:
 
 ---
 
+<<<<<<< HEAD
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 

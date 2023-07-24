@@ -227,7 +227,12 @@ The Azure Portal is intuitive and easy to use. The easiest way to find what you 
 
 - Select **Resource groups** in the search results and note the **+ Create** button at the top.
   - Select the region you just identified in the prior walkthrough.
+<<<<<<< HEAD
 - Every resource that you create will have this button at the top.
+=======
+  **Important** - Remember the Resource Group Name you choose.  Unless specified otherwise, all future resources need to be a part of this group
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
     ![](../1/Images/ResourceGroups/ResourceGroupsInfo1.png)
 
@@ -273,9 +278,19 @@ We'll only need to define the boundaries of the network and we can use the defau
 
 - Azure also automatically provides logging capabilities, so we can easily check the history of the DHCP lease.
 
+<<<<<<< HEAD
 Final vNet Settings should be similar to:
 
 ![](Images/virtual_net/create_network.png)
+=======
+:warning: **Heads Up:** Make sure you do not check the `Azure Bastion`, `Azure Firewall` or `Azure DDoS Network Protection` boxes as they can easily surpass the $200 credit provided
+
+![](Images/CreateVirtualNetwork.png)
+
+Final vNet Settings should be similar to:
+
+![](Images/CreateVirtualNetworkFinal.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ### 04. Virtual Networking Activity
 
@@ -350,7 +365,14 @@ Create a rule using the following settings:
 
 - Source Port Ranges: Source ports are generated randomly, so it's best to leave the wild card (*) here to signify all source ports.
 
+<<<<<<< HEAD
 - Destination: We can choose between Any, IP address(s), VirtualNetwork, or an application security group. We'll choose **VirtualNetwork**.
+=======
+- Destination: We can choose between Any, IP address(s), VirtualNetwork, or an application security group. We'll choose **Service Tags**.
+
+    - In the "Destination service tag" dropdown that appears, select "Virtual Network"
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 	- Note that _if_ you wanted to send traffic to a specific machine, you would enter its _internal_ IP address here.
 
 - Service: We can choose the protocol RDP
@@ -365,7 +387,11 @@ Create a rule using the following settings:
 
 - Name/Description: You can name a rule whatever you like, but it is a best practice to name it what it is and describe what it does. Here, we will name it "Allow-RDP" and add the description: "Allow RDP from external IP over port 3389."
 
+<<<<<<< HEAD
   ![](../1/Images/Security-Group-Rule1-b.png)
+=======
+  ![](../1/Images/AddInboundSecurityRule.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 **Note:** The external IP is not shown in the screen shot.
 
@@ -459,9 +485,15 @@ Before we start, we'll cover a few key components of the VM creation process.
 
 - Navigate to your Azure portal, search for "Virtual" and select **Virtual machines**.
 
+<<<<<<< HEAD
 - Click **+ Add** to create a new VM.
 
     ![](../1/Images/VM_admin/VM_add.png)
+=======
+- Click **+ Create** to create a new VM.
+
+    ![](../1/Images/VM/CreateVM-b.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - The tabs across the top of the VM creation page. Today we'll focus on the **Basics**, **Disks**, **Networking** and **Review + Create** tabs. Don't worry about the **Management**, **Advanced**, and **Tags** tabs.
 
@@ -500,7 +532,11 @@ Click on 'Change size'
 
 Choose a machine that has 1vCPU and one GiB of Memory (B1s).
 
+<<<<<<< HEAD
 ![](Images/regions-avail/Smallest-Option-b.png)
+=======
+![](Images//Jump_box-VM.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 #### SSH setup
 Accessing a server with SSH using a password is inherently weak: many programs can brute force an SSH password. Instead, we want to practice setting up secure systems from the beginning, so we will use an SSH key pair to access our new machine.
@@ -558,7 +594,11 @@ All SSH keys are stored in the user home folder under a hidden `.ssh` directory.
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGG6dBJ6ibhgM09U+kn/5NE7cGc4CNHWXein0f+MciKElDalf76nVgFvJQEIImMhAGrtRRJDAd6itlPyBpurSyNOByU6LX7Gl6DfGQKzQns6+n9BheiVLLY9dtodp8oAXdVEGles5EslflPrTrjijVZa9lxGe34DtrjijExWM6hBb0KvwlkU4worPblINx+ghDv+3pdrkUXMsQAht/fLdtP/EBwgSXKYCu/
     ```
 
+<<<<<<< HEAD
 - Copy the SSH key string and paste it into the Administrator Account section on the Basics page for the VM in Azure.
+=======
+- Copy the **Entire** SSH key string and paste it into the Administrator Account section on the Basics page for the VM in Azure.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 	- For `SSH public key source` select `Use existing public key` from the drop down.
     - You will use the same SSH key for every machine you create today. Later we will change the key on a few machines.
 
@@ -614,4 +654,8 @@ Please remember to ALWAYS stop all the VMs in your Azure account before ending c
 
 -------
 
+<<<<<<< HEAD
 © 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

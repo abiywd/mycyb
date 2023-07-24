@@ -347,7 +347,11 @@ To install applications on a Linux machine, we use the `apt` command.
 
 Since we don't know when these images were last updated, we will first update them by running `apt-get update`.
 
+<<<<<<< HEAD
 - Run `apt-get update`
+=======
+- Run `sudo apt-get update`
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 To install Docker, we need to specify `docker.io`.
 
@@ -718,4 +722,8 @@ Ansible has a `ping` command that will verify these connections.
 
 ### Copyright
 
+<<<<<<< HEAD
 Trilogy Education Services © 2020. All Rights Reserved.
+=======
+2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

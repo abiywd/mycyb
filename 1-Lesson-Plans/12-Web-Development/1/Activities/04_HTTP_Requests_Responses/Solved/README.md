@@ -126,9 +126,5 @@ The goal of this activity was to combine skills in research and critical thinkin
     - Solution: Looking at HTTP Request 4, it's clear that the attacker stole a cookie and was able to log into the admin portal using a GET request with stolen cookies set in the header.
 
 --- 
-<<<<<<< Updated upstream
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-=======
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
->>>>>>> Stashed changes
 

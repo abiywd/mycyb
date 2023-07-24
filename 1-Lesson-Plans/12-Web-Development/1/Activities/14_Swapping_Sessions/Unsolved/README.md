@@ -79,8 +79,4 @@ You just swapped your sessions between users without having to log out of them.
 7. Make sure to run `docker-compose down` while in the directory where you have the `docker-compose` file. This will de-instantiate your Docker Compose instance. 
 
 ---
-<<<<<<< Updated upstream
-© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
-=======
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.  
->>>>>>> Stashed changes

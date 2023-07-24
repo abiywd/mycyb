@@ -18,7 +18,12 @@ Use the Azure portal to create a resource group that will contain everything the
 
     ![](Images/resource_group/add_resource.png)
 
+<<<<<<< HEAD
 - Create a name for your resource group and choose a region.        
+=======
+- Create a name for your resource group and choose a region.   
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - Note: Choose the region you determined in the class walkthrough. Every resource you create after this must be created in the exact same region.
 
 - Click on **Review + create**.
@@ -51,7 +56,11 @@ Fill in the network settings:
 
 - Subscription: Your free subscription should be the only option here.
 
+<<<<<<< HEAD
 - Resource group: This should be the resource group you created in step two.
+=======
+- Resource group: This should be the resource group you created in Step 2.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Name: A descriptive name so it will not get confused with other cloud networks in the same account.
 
@@ -71,7 +80,11 @@ Fill in the network settings:
   
   - In order to avoid recurring charges, do **not** enable DDoS Protection Standard. 
 
+<<<<<<< HEAD
    ![](Images/virtual_net/vNet3.png)
+=======
+   ![](Images/virtual_net/CreateVirtualNetwork.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Tags: No tags are needed.
 
@@ -79,11 +92,19 @@ Fill in the network settings:
 
 Click **Create**.
 
+<<<<<<< HEAD
 - ![](Images/virtual_net/create_network.png)
+=======
+- ![](Images/virtual_net/CreateVirtualNetworkFinal.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 Once you have created your resource group and VNet, return to the home screen and choose the resource group option. 
 
 - This provides a list of all resource groups in your account. 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 - Choose the group that you created and you should see your VNet listed as a resource. 
 
 ![](Images/virtual_net/final_resource_group.png)
@@ -91,4 +112,9 @@ Once you have created your resource group and VNet, return to the home screen an
 You now have a resource group and VNet that you can use to create the rest of the cloud infrastructure throughout the unit.
 
 ---
+<<<<<<< HEAD
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

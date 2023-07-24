@@ -6,16 +6,26 @@ In this activity, you launched a new VM from the Azure portal that could only be
 
 1. Connect to your Ansible container. Once you're connected, create a new SSH key and copy the public key.
 
+<<<<<<< HEAD
     - Run `sudo docker container list -a` to find your image.
 
     - Run `docker run -it cyberxsecurity/ansible /bin/bash` to start your container and connect to it. (Note that the prompt changes.)
+=======
+    - Run: `sudo docker container list -a` to find your image.
+
+    - Run: `docker run -it cyberxsecurity/ansible /bin/bash` to start your container and connect to it. (Note that the prompt changes.)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@Red-Team-Web-VM-1:/home/RedAdmin# docker run -it cyberxsecurity/ansible /bin/bash
         root@23b86e1d62ad:~#
         ```
 
+<<<<<<< HEAD
     - Run `ssh-keygen` to create an SSH key.
+=======
+    - Run: `ssh-keygen` to create an SSH key.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@23b86e1d62ad:~# ssh-keygen
@@ -43,14 +53,22 @@ In this activity, you launched a new VM from the Azure portal that could only be
         root@23b86e1d62ad:~#
         ```
 
+<<<<<<< HEAD
     - Run `ls .ssh/` to view your keys.
+=======
+    - Run: `ls .ssh/` to view your keys.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@23b86e1d62ad:~# ls .ssh/
         id_rsa  id_rsa.pub
         ```
 
+<<<<<<< HEAD
     - Run `cat .ssh/id_rsa.pub` to display your public key.
+=======
+    - Run: `cat .ssh/id_rsa.pub` to display your public key.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@23b86e1d62ad:~# cat .ssh/id_rsa.pub
@@ -59,15 +77,25 @@ In this activity, you launched a new VM from the Azure portal that could only be
 
     - Copy your public key string.
 
+<<<<<<< HEAD
 2. Return to the Azure portal and locate one of your web-vm's details page.
 
 		- Reset your Vm's password and use your container's new public key for the SSH user.
+=======
+2. Return to the Azure portal and locate one of your Web-VM's details page.
+
+		- Reset your VM's password and use your container's new public key for the SSH user.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
     - Get the internal IP for your new VM from the Details page.
 
 ![](../../../Images/web-reset-ssh/reset-ssh.png)
 
 3. After your VM launches, test your connection using `ssh` from your jump box Ansible container.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - Note: If only TCP connections are enabled for SSH in your security group rule, ICMP packets will not be allowed, so you will not be able to use `ping`.
 
     ```bash
@@ -119,12 +147,25 @@ In this activity, you launched a new VM from the Azure portal that could only be
     root@1f08425a2967:~# ls /etc/ansible/
     ansible.cfg  hosts  roles
     ```
+<<<<<<< HEAD
      - Add this machine's internal IP address to the Ansible hosts file.
 
     - Open the file with `nano /etc/ansible/hosts`.
     - Uncomment the `[webservers]` header line.
     - Add the internal IP address under the `[webservers]` header.
 		- Add the python line: `ansible_python_interpreter=/usr/bin/python3` besides each IP.
+=======
+     
+     - Add this machine's internal IP address to the Ansible hosts file.
+
+    - Open the file with `nano /etc/ansible/hosts`.
+
+    - Uncomment the `[webservers]` header line.
+
+    - Add the internal IP address under the `[webservers]` header.
+
+	- Add the python line: `ansible_python_interpreter=/usr/bin/python3` besides each IP.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
     ```bash
         # This is the default ansible 'hosts' file.
@@ -185,7 +226,11 @@ In this activity, you launched a new VM from the Azure portal that could only be
 
 6. Test an Ansible connection using the appropriate Ansible command.
 
+<<<<<<< HEAD
 If you used `ansible_python_interpreter=/usr/bin/python3` your output should look like:
+=======
+If you used `ansible_python_interpreter=/usr/bin/python3`, your output should look like:
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ```bash
 10.0.0.5 | SUCCESS => {
@@ -218,7 +263,15 @@ by setting deprecation_warnings=False in ansible.cfg.
 }
 ```
 
+<<<<<<< HEAD
 - Ignore the `[DEPRECATION WARNING]` or add the line `ansible_python_interpreter=/usr/bin/python3` next to each Ip address in the hosts file.
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved. 
+=======
+- Ignore the `[DEPRECATION WARNING]` or add the line `ansible_python_interpreter=/usr/bin/python3` next to each IP address in the host's file.
+
+---
+
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved. 
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

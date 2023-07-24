@@ -20,7 +20,12 @@ Use the Azure portal to create a resource group that will contain everything the
 
     ![](1/Images/ResourceGroupsInfo1.png)
 
+<<<<<<< HEAD
 - Create a name for your resource group and choose a region.        
+=======
+- Create a name for your resource group and choose a region.  
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - Note: Choose a region that you can easily remember. Every resource you create after this must be created in the exact same region.
 
 - Click on **Review + create**.
@@ -33,7 +38,11 @@ Use the Azure portal to create a resource group that will contain everything the
 
 - Once the group is created, click on **Go to resource group** in the top-right corner of the screen to view your new resource group.
 
+<<<<<<< HEAD
     ![](1/Images/resource_group/go_to_resouce.png)
+=======
+    ![](1/Images/resource_group/go_to_resource.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ---
 
@@ -66,13 +75,21 @@ Fill in the network settings:
 ![](1/Activities/04_Virtual_Networking/Solved/Images/virtual_net/vNet1.png)
 
 - IP Addresses: Azure requires you to define a network and subnet.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - Use the defaults on this tab.
 
 ![](1/Activities/04_Virtual_Networking/Solved/Images/virtual_net/vNet2.png)
 
 - Security: Leave the default settings.
 
+<<<<<<< HEAD
 ![](1/Images/virtual_net/vNet3.png)
+=======
+![](1/Images/CreateVirtualNetwork.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Tags: No tags are needed.
 
@@ -83,7 +100,13 @@ Click **Create**.
 ![](1/Activities/04_Virtual_Networking/Solved/Images/virtual_net/create_network.png)
 
 Once you have created your resource group and VNet, return to the home screen and choose the resource group option. 
+<<<<<<< HEAD
 - This provides a list of all resource groups in your account. 
+=======
+
+- This provides a list of all resource groups in your account. 
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 - Choose the group that you created and you should see your VNet listed as a resource. 
 
 ![](1/Activities/04_Virtual_Networking/Solved/Images/virtual_net/final_resource_group.png)
@@ -150,17 +173,29 @@ You should now have a VNet protected by a network security group that blocks all
 
 #### Setting up Virtual Machines
 
+<<<<<<< HEAD
 The goal of this activity was to set up your first virtual machines inside your cloud network, which is protected by your network security group. You will use this machine as a jump box to access your cloud network and any other machines inside your VNet.
 
 ---
 
 Remember: Allowing a server to use password authentication for SSH is insecure because the password can be brute forced.
+=======
+The goal of this activity was to set up your first virtual machine (VM) inside your cloud network, which is protected by your network security group. You will use this machine as a jump box to access your cloud network and any other machines inside your VNet.
+
+---
+
+Remember: Allowing a server to use password authentication for Secure Shell (SSH) is insecure because the password can be brute forced.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Therefore, we will only use cryptographic SSH keys to access our cloud servers. Password authentication will not be allowed. 
 
 - This is part of the "ground up" security approach that we have been discussing. 
 
 Open your command line and run `ssh-keygen` to create a new SSH key pair.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - DO NOT CREATE A PASSPHRASE, just press enter twice.
 
 - Your output should be similar to:
@@ -203,11 +238,19 @@ Run `cat ~/.ssh/id_rsa.pub` to display your `id_rsa.pub` key:
 
 ---
 
+<<<<<<< HEAD
 #### VM 1 - Jump-Box
 
 Open your Azure portal and search for "virtual machines."
 
 - Use the **+ Add** button or the **Create virtual machine** button to create a new VM.
+=======
+#### VM 1 – Jump-Box
+
+Open your Azure portal and search for "virtual machines."
+
+- Use the **+ Create** button or the **Create virtual machine** button to create a new VM.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
     ![](1/Images/VM/CreateVM-b.png)
 
@@ -215,6 +258,7 @@ Use the following settings for this VM:
 
 - Resource group: Choose the same resource group that you created for the Red Team.
 
+<<<<<<< HEAD
 - Virtual machine name: Use the name "Jump Box Provisioner."
 
 - Region: Use the same region that you used for your other resources.
@@ -228,6 +272,26 @@ Use the following settings for this VM:
 - Choose the VM option that has:
   - Whose offering is **Standard - B1s**
   - 1 CPU
+=======
+- VM name: Use the name "Jump Box Provisioner."
+
+- Region: Use the same region that you used for your other resources.
+
+	- Note that availability of VM's in Azure could cause you to change the region where your VMs are created.
+
+	- The goal is to create three machines in the same resource group attached to the same security group. If you cannot add three machines to the resource group and security group that you have, a new resource group and security group may need to be created in another region.
+
+- Availability options: We will use this setting for other machines. For our jump box, we will leave this on the default setting.
+
+- Image: Choose the Ubuntu Server 20.04 option.
+
+- Choose the VM option that has:
+
+  - Whose offering is **Standard - B1s**
+
+  - 1 CPU
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
   - 1 RAM
 
 For SSH, use the following settings: 
@@ -242,7 +306,11 @@ For SSH, use the following settings:
 
 - Select inbound ports: Ignore this setting. It will be overwritten when you choose your security group.
 
+<<<<<<< HEAD
 ![](1/Images/VM/VMSettings.png)
+=======
+![](1/Images/Jump_box-VM.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 Move to the **Networking** tab and set the following settings:
 
@@ -252,7 +320,11 @@ Move to the **Networking** tab and set the following settings:
 
 - Public IP: This can be kept as default. 
 
+<<<<<<< HEAD
 - NIC network security group: Choose the Advanced option so we can specify our custom security group.
+=======
+- NIC network security group: Choose the "Advanced" option so we can specify our custom security group.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Configure network security group: Choose your Red Team network security group.
 
@@ -262,7 +334,11 @@ Move to the **Networking** tab and set the following settings:
 
 - Load balancing: Keep as the default setting (None).
 
+<<<<<<< HEAD
     ![](1/Images/VM/VMNetworking-b.png)
+=======
+    ![](1/Images/JumpBoxNetwork.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Click on **Review + create**.
 
@@ -270,6 +346,7 @@ Move to the **Networking** tab and set the following settings:
 
 - Finalize all your settings and create the VM by clicking on the **Create** button.
 
+<<<<<<< HEAD
 #### VM's 2 and 3 - Web VM's
 
 Create 2 more new VMs. Keep the following in mind when configuring these VM's:
@@ -297,6 +374,43 @@ Create 2 more new VMs. Keep the following in mind when configuring these VM's:
 - Under Availability Options, select 'Availability Set'. Click on 'Create New' under the Availability set. Give it an appropriate name. After creating it on the first VM, choose it for the second VM.
 
 ![](1/Images/Avail_Set/Avail-Set.png)
+=======
+#### VMs 2 and 3 – Web VMs
+
+Create 2 more new VMs. Keep the following in mind when configuring these VMs:
+
+- Each VM should be named "Web-1" and "Web-2"
+
+- These VMs need to be in the same resource group you are using for all other resources.
+
+- The VMs should be located in the same region as your resource group and security group.
+
+	- Note that availability of VMs in Azure could cause you to change the region where your VMs are created.
+
+	- The goal is to create three machines in the same resource group attached to the same security group. If you cannot add three machines to the resource group and security group that you have, a new resource group and security group may need to be created in another region.
+
+- The administrative username should make sense for this scenario. You should use the same admin name for all three machines. Make sure to take a note of this name as you will need it to login later.
+
+- **SSH Key:** Later in the lab setup, we will overwrite these SSH keys. For now, use the SSH key that you created in the first VM setup.
+
+    - Run: `cat ~/.ssh/id_rsa.pub` and copy the key.
+
+- Choose the VM option that has:
+
+  - Whose offering is **Standard - B1ms**
+
+  - 1 CPU
+
+  - 2 RAM
+
+**Note:** These web machines should have **2 GB** of RAM and the Jump-Box only needs **1 GB**. All three machines should only have **1 vCPU** because the free Azure account only allows **4 vCPUs** in total per region.
+
+**VERY IMPORTANT:** Make sure both of these VMs are in the same availability Set. Machines that are not in the same availability set cannot be added to the same load balancer later, and will have to be deleted and recreated in the same availability set.  
+
+- Under Availability Options, select "Availability Set." Click on "Create New" under the Availability set. Give it an appropriate name. After creating it on the first VM, choose it for the second VM.
+
+![](1/Images/WebVMNetworking.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 In the **Networking** tab and set the following settings:
 
@@ -304,11 +418,19 @@ In the **Networking** tab and set the following settings:
 
 - Subnet: Choose the subnet that you created earlier.
 
+<<<<<<< HEAD
 - Public IP: NONE! Make sure these web VM's do not have a public IP address.
 
 ![](1/Images/Avail_Set/No-Ip.png)
 
 - NIC network security group: Choose the Advanced option so we can specify our custom security group.
+=======
+- Public IP: NONE! Make sure these web VMs do not have a public IP address.
+
+![](1/Images/Avail_Set/No-Ip.png)
+
+- NIC network security group: Choose the "Advanced" option so we can specify our custom security group.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Configure network security group: Choose your Red Team network security group.
 
@@ -320,19 +442,30 @@ In the **Networking** tab and set the following settings:
 
 **NOTE:** Notice that these machines will not be accessible at this time because our security group is blocking all traffic. We will configure access to these machines in a later activity.
 
+<<<<<<< HEAD
 The final WebVM's should resemble the following:
+=======
+The final WebVMs should resemble the following:
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ![](1/Images/Avail_Set/final-VM.png)
 
 #### Setting up your Jump Box Administration
 
+<<<<<<< HEAD
 The goal of this activity was to create a security group rule to allow SSH connections only from your current IP address, and to connect to your new virtual machine for management.
+=======
+The goal of this activity was to create a security group rule to allow SSH connections only from your current IP address, and to connect to your new VM for management.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ---
 
 1. Visit `whatsmyip.org` to get the IPv4 address of the network you are currently using.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 Next, log into portal.azure.com to create a security group rule to allow SSH connections from your current IP address.
 
 2. Find your security group listed under your resource group.
@@ -346,6 +479,10 @@ Next, log into portal.azure.com to create a security group rule to allow SSH con
         - Source: Use the **IP Addresses** setting, with your IP address in the field.
 
         - Source port ranges: Set to **Any** or '*' here.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
             - Destination: This can be set **VirtualNetwork** but a better setting is to specify the internal IP of your jump box to really limit this traffic.
 
         - Service: This can be set to **SSH**
@@ -356,16 +493,25 @@ Next, log into portal.azure.com to create a security group rule to allow SSH con
 
         - Action: Set to **Allow** traffic.
 
+<<<<<<< HEAD
         - Priority: This must be a lower number than your rule to deny all traffic, i.e., less than 4,096. 
+=======
+        - Priority: This must be a lower number than your rule to deny all traffic (i.e., less than 4,096). 
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         - Name: Name this rule anything you like, but it should describe the rule. For example: `SSH`.
 
         - Description: Write a short description similar to: "Allow SSH from my IP." 
 
+<<<<<<< HEAD
 
 	![](2/Images/limit-ip1.png)
 
 
+=======
+	![](2/Images/limit-ip1.png)
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 4. Use your command line to SSH to the VM for administration. Windows users should use GitBash.
 
     - The command to connect is `ssh admin-username@VM-public-IP`.
@@ -384,7 +530,10 @@ Please note that your public IP address will change depending on your location.
 
  - In our case, you will need to create another security rule allowing your home network to access your Azure VM. 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 **NOTE:** If you need to reset your SSH key, you can do so in the VM details page by selecting 'Reset Password' on the left had column.
 
 ![](2/Images/SSH-Jump/password-reset.png)
@@ -397,13 +546,21 @@ The goal of this activity was to configure your jump box to run Docker container
 
 1. Start by installing `docker.io` on your Jump box.
 
+<<<<<<< HEAD
     - Run `sudo apt update` then `sudo apt install docker.io`
+=======
+    - Run: `sudo apt update` then `sudo apt install docker.io`.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     
   ![](2/Images/Docker_Ansible/Docker_Install.png)
 
 2. Verify that the Docker service is running.
 
+<<<<<<< HEAD
     - Run `sudo systemctl status docker`
+=======
+    - Run: `sudo systemctl status docker`.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
       - **Note:** If the Docker service is not running, start it with `sudo systemctl start docker`.
 
@@ -411,12 +568,17 @@ The goal of this activity was to configure your jump box to run Docker container
 
 3. Once Docker is installed, pull the container `cyberxsecurity/ansible`.
 
+<<<<<<< HEAD
     - Run `sudo docker pull cyberxsecurity/ansible`.
+=======
+    - Run: `sudo docker pull cyberxsecurity/ansible`.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ![](2/Images/Docker_Ansible/Docker_Pull.png)
 
     - You can also switch to the root user so you don't have to keep typing `sudo`.
 
+<<<<<<< HEAD
     - Run `sudo su`.
 
 
@@ -425,6 +587,15 @@ The goal of this activity was to configure your jump box to run Docker container
     - Run `docker run -ti cyberxsecurity/ansible:latest bash` to start the container.
 
     - Run `exit` to quit.
+=======
+    - Run: `sudo su`.
+
+4. Launch the Ansible container and connect to it using the appropriate Docker commands.
+
+    - Run: `docker run -ti cyberxsecurity/ansible:latest bash` to start the container.
+
+    - Run: `exit` to quit.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ![](2/Images/Docker_Ansible/Container_Connected.png)
 
@@ -440,9 +611,15 @@ The goal of this activity was to configure your jump box to run Docker container
 
         - Source port ranges: **Any** or * can be listed here.
 
+<<<<<<< HEAD
         - Destination: Set to **VirtualNetwork**.
 
         - Service: Select **SSH**
+=======
+        - Destination: Set to **Service Tag**/**VirtualNetwork**.
+
+        - Service: Select **SSH**.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         - Destination port ranges: This will default to port `22`.
 
@@ -452,7 +629,11 @@ The goal of this activity was to configure your jump box to run Docker container
 
         - Priority: Priority must be a lower number than your rule to deny all traffic.
 
+<<<<<<< HEAD
         - Name: Name this rule anything you like, but it should describe the rule. For example: `SSH from Jump Box`.
+=======
+        - Name: Name this rule anything you like, but it should describe the rule. For example: `SSH-from-Jump-Box`.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         - Description: Write a short description similar to: "Allow SSH from the jump box IP."
 
@@ -470,16 +651,26 @@ In this activity, you launched a new VM from the Azure portal that could only be
 
 1. Connect to your Ansible container. Once you're connected, create a new SSH key and copy the public key.
 
+<<<<<<< HEAD
     - Run `docker images` to view your image.
 
     - Run `docker run -it cyberxsecurity/ansible /bin/bash` to start your container and connect to it. (Note that the prompt changes.)
+=======
+    - Run: `sudo docker images` to view your image.
+
+    - Run: `sudo docker run -it cyberxsecurity/ansible /bin/bash` to start your container and connect to it. (Note that the prompt changes.)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@Red-Team-Web-VM-1:/home/RedAdmin# docker run -it cyberxsecurity/ansible /bin/bash
         root@23b86e1d62ad:~# 
         ```
 
+<<<<<<< HEAD
     - Run `ssh-keygen` to create an SSH key.
+=======
+    - Run: `ssh-keygen` to create an SSH key.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@23b86e1d62ad:~# ssh-keygen
@@ -507,14 +698,22 @@ In this activity, you launched a new VM from the Azure portal that could only be
         root@23b86e1d62ad:~#
         ```
 
+<<<<<<< HEAD
     - Run `ls .ssh/` to view your keys.
+=======
+    - Run: `ls .ssh/` to view your keys.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@23b86e1d62ad:~# ls .ssh/
         id_rsa  id_rsa.pub
         ```
 
+<<<<<<< HEAD
     - Run `cat .ssh/id_rsa.pub` to display your public key.
+=======
+    - Run: `cat .ssh/id_rsa.pub` to display your public key.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
         ```bash
         root@23b86e1d62ad:~# cat .ssh/id_rsa.pub 
@@ -532,6 +731,10 @@ In this activity, you launched a new VM from the Azure portal that could only be
 ![](3/Images/web-reset-ssh/reset-ssh.png)
 
 3. After your VM launches, test your connection using `ssh` from your jump box Ansible container. 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
     - Note: If only TCP connections are enabled for SSH in your security group rule, ICMP packets will not be allowed, so you will not be able to use `ping`. 
 
     ```bash
@@ -787,7 +990,11 @@ You will also need to use the `systemd` module to restart the docker service whe
         enabled: yes
 ```
 
+<<<<<<< HEAD
 3. Run your Ansible playbook on the new virtual machine.
+=======
+3. Run your Ansible playbook on the new VM.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
     Your final playbook should read similar to:
     ```YAML
@@ -924,7 +1131,10 @@ To complete this activity, you had to install a load balancer in front of the VM
 ![](3/Images/CreateLB1.png)
 ![](3/Images/Load-Balancer/FinalizeLB.png)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 2. Add a health probe to regularly check all the VMs and make sure they are able to receive traffic.
 ![](3/Images/Load-Balancer/HealthProbe.png)
 
@@ -954,6 +1164,10 @@ To complete this activity, you had to install a load balancer in front of the VM
     - Backend pool and Health probe: Select your backend pool and your health probe.
 
     - Session persistence: This should be changed to **Client IP and protocol**.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
         - Remember, these servers will be used by the Red Team to practice attacking machines. If the session changes to another server in the middle of their attack, it could stop them from successfully completing their training.
 
     - Idle timeout: This can remain the default (**4 minutes**).
@@ -962,7 +1176,10 @@ To complete this activity, you had to install a load balancer in front of the VM
 
     ![](3/Images/Load-Balancer/LBRuleSettings.png)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 2. Create a new security group rule to allow port `80` traffic from the internet to your internal VNet.
 
     - Source: Change this your external IPv4 address.
@@ -983,7 +1200,11 @@ To complete this activity, you had to install a load balancer in front of the VM
 
 ![](3/Images/HTTP-SG/HTTP-Rule.png)
 
+<<<<<<< HEAD
 3. Remove the security group rule that blocks _all_ traffic on your vnet to allow traffic from your load balancer through.
+=======
+3. Remove the security group rule that blocks **all** traffic on your vnet to allow traffic from your load balancer through.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
     - Remember that when we created this rule we were blocking traffic from the allow rules that were already in place. One of those rules allows traffic from load balancers.
 
@@ -1005,4 +1226,8 @@ To complete this activity, you had to install a load balancer in front of the VM
 Congratulations! You have created a highly available web server for XCorp's Red Team to use for testing and training.
 
 ---
+<<<<<<< HEAD
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

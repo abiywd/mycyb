@@ -18,10 +18,18 @@
 
 3. After your VM launches, test your connection using `ssh <vm-username>@<VM-Ip-address>` from your jump box Ansible container and accept the key.
 
+<<<<<<< HEAD
 4. Add this machine's _internal IP address_ to the Ansible _hosts_ file.
 		- Note: Your Web VM's _should not_ have an external IP address. If they _do_ have an external IP address, it can be ignored.
 
 5. Change the Ansible _configuration_ file to use your administrator account for SSH connections.
+=======
+4. Add this machine's **internal IP address** to the Ansible **host's** file.
+
+	- Note: Your Web VMs **should not** have an external IP address. If they **do** have an external IP address, it can be ignored.
+
+5. Change the Ansible **configuration** file to use your administrator account for SSH connections.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 	- **HINT:** Remember to add the line: `ansible_python_interpreter=/usr/bin/python3` besides each IP address you enter.
 
@@ -30,4 +38,9 @@
 7. Repeat these steps for your second Web-VM.
 
 ---
+<<<<<<< HEAD
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679

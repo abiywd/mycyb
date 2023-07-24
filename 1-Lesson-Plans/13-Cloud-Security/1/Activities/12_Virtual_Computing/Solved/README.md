@@ -50,18 +50,27 @@ Run `cat ~/.ssh/id_rsa.pub` to display your `id_rsa.pub` key:
 
 - Highlight and copy the SSH key string to your clipboard. 
 
+<<<<<<< HEAD
 #### VM 1 - Jump-Box
+=======
+#### VM 1 – Jump Box
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 Open your Azure portal and search for "virtual machines."
 
 - Use the **+ Add** button or the **Create virtual machine** button to create a new VM.
 
+<<<<<<< HEAD
     ![](../../../Images/VM/CreateVM.png)
+=======
+    ![](../../../Images/VM/CreateVM-b.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 Use the following settings for this VM: 
 
 - Resource group: Choose the same resource group that you created for the Red Team.
 
+<<<<<<< HEAD
 - Virtual machine name: Use the name "JumpBoxProvisioner."
 
 - Region: Use the same region that you used for your other resources.
@@ -75,6 +84,26 @@ Use the following settings for this VM:
 - Choose the VM option that has:
   - Whose offering is **Standard - B1s**
   - 1 CPU
+=======
+- VM name: Use the name "JumpBoxProvisioner."
+
+- Region: Use the same region that you used for your other resources.
+
+	- Note that availability of VMs in Azure could cause you to change the region where your VMs are created.
+
+	- The goal is to create three machines in the same resource group attached to the same security group. If you cannot add three machines to the resource group and security group that you have, a new resource group and security group may need to be created in another region.
+
+- Availability options: We will use this setting for other machines. For our jump box, we will leave this on the default setting.
+
+- Image: Choose the Ubuntu Server 20.04 option.
+
+- Choose the VM option that has:
+
+  - Its offering set as **Standard - B1s**
+
+  - 1 CPU
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
   - 1 GB RAM
 
 For SSH, use the following settings: 
@@ -89,7 +118,11 @@ For SSH, use the following settings:
 
 - Select inbound ports: Ignore this setting. It will be overwritten when you choose your security group.
 
+<<<<<<< HEAD
 ![](../../../Images/VM/VMSettings.png)
+=======
+![](../../../Images/Jump_box-VM.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 Move to the **Networking** tab and set the following settings:
 
@@ -101,17 +134,30 @@ Move to the **Networking** tab and set the following settings:
 
 ![](../../../Images/VM/Static-IP.png)
 
+<<<<<<< HEAD
 - NIC network security group: Choose the Advanced option so we can specify our custom security group.
 
 - Configure network security group: Choose your Red Team network security group.
 
+=======
+- NIC network security group: Choose the "Advanced" option so we can specify our custom security group.
+
+- Configure network security group: Choose your Red Team network security group.
+
+- **Recommended** Check the box to Delete public IP and NIC when VM is deleted.  If you have to delete the VM later, this will prevent extra IPs from appearing
+
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 - Accelerated networking: Keep as the default setting (Off).
 
 - In the Networking settings, take note of the VM URL. You may use it later.
 
 - Load balancing: Keep as the default setting (No).
 
+<<<<<<< HEAD
     ![](../../../Images/VM/VMNetworking.png)
+=======
+    ![](../../../Images/JumpBoxNetwork.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - Click on **Review + create**.
 
@@ -119,6 +165,7 @@ Move to the **Networking** tab and set the following settings:
 
 - Finalize all your settings and create the VM by clicking on the **Create** button.
 
+<<<<<<< HEAD
 
 
 #### VM's 2 and 3 - Web VM's
@@ -145,6 +192,39 @@ Create 2 more new VMs. Keep the following in mind when configuring these VM's:
 **Note:** These web machines should have _2 GB_ of RAM and the Jump-Box only needs _1 GB_. All 3 machines should only have _1 vCPU_ because the free Azure account only allows _4 vCPU's_ in total per region.
 
 **Important:** Make sure both of these VM's are in the same availability Set. Under Availability Options, select 'Availability Set'. Click on 'Create New' under the Availability set. Give it an appropriate name. After creating it on the first VM, choose it for the second VM.
+=======
+#### VMs 2 and 3 – Web VMs
+
+Create two more new VMs. Keep the following in mind when configuring these VMs:
+
+- Each VM should be named "Web-1" and "Web-2."
+
+- These VMs need to be in the same resource group you are using for all other resources.
+
+- The VMs should be located in the same region as your resource group and security group.
+
+	- Note that availability of VMs in Azure could cause you to change the region where your VMs are created.
+
+	- The goal is to create three machines in the same resource group attached to the same security group. If you cannot add three machines to the resource group and security group that you have, a new resource group and security group may need to be created in another region.
+
+- The administrative username should make sense for this scenario. You should use the same admin name for all three machines. Make sure to take a note of this name as you will need it to login later.
+
+- You will need to create a new SSH key for remote connections. 
+
+	- **Note:** Windows users should use [GitBash](https://gitforwindows.org/) to create ssh keys and ssh connections.
+
+- Choose the VM option that has:
+
+  - Its offering set as **Standard - B1ms**
+
+  - 1 CPU
+
+  - 2 GB RAM
+
+**Note:** These web machines should have **2 GB** of RAM and the Jump-Box only needs **1 GB**. All 3 machines should only have **1 vCPU** because the free Azure account only allows **4 vCPUs** in total per region.
+
+**Important:** Make sure both of these VMs are in the same availability Set. Under Availability Options, select "Availability Set." Click on "Create New" under the Availability set. Give it an appropriate name. After creating it on the first VM, choose it for the second VM.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ![](../../../Images/Avail_Set/Avail-Set.png)
 
@@ -156,7 +236,11 @@ In the **Networking** tab and set the following settings:
 
 - Public IP: NONE! Make sure these web VM's do not have a public IP address.
 
+<<<<<<< HEAD
 ![](../../../Images/Avail_Set/No-Ip.png)
+=======
+![](../../../Images/WebVMNetworking.png)
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 - NIC network security group: Choose the Advanced option so we can specify our custom security group.
 
@@ -170,9 +254,18 @@ In the **Networking** tab and set the following settings:
 
 **NOTE:** Notice that these machines will not be accessible at this time because our security group is blocking all traffic. We will configure access to these machines in a later activity.
 
+<<<<<<< HEAD
 The final WebVM's should resemble the following:
+=======
+The final WebVMs should resemble the following:
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
 
 ![](../../../Images/Avail_Set/final-VM.png)
 
 --- 
+<<<<<<< HEAD
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+=======
+
+© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 8dbd11e1b6308442aac1e17388e8d1dd6c3c8679
